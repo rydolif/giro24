@@ -1,0 +1,113 @@
+@import "fonts"
+
+
+//----------------------fonts---------------------
+$fonts: Helvetica, Helvetica Neue, Arial, sans-serif
+$fw: 'Font Awesome 5 Brands', sans-serif
+//---------------------end-fonts---------------------
+
+//----------------------color---------------------
+$text: #000
+$accent: #fcc049
+
+//---------------------end-color---------------------
+
+body
+	overflow-x: hidden
+	position: relative
+	min-width: 320px
+	font-family: $fonts
+	font-size: 14px
+	color: $text
+	line-height: 1.75
+	font-weight: 400
+
+::selection
+	background-color: $accent
+	color: #fff
+
+a, div, ul, li, input, textarea
+	&:hover,
+	&:focus
+		outline: none
+
+// section
+// 	overflow: hidden
+	
+h1, h2, h3, h4, h5, h6
+	font-weight: 800
+	margin: 0
+	padding: 0
+	color: $text
+
+a
+	color: $text
+	&:hover, &:focus
+		color: $text
+ul
+	margin: 0
+	padding: 0
+	list-style-type: none
+
+i
+	font-style: normal
+	font-size: 16px
+	color: #fff
+
+input, textarea
+	width: 100%
+	border: 2px solid #C4C4C4
+	color: #7F7F77
+	height: 45px
+	line-height: 45px
+	border-radius: 0
+	font-size: 16px
+	color: #7F7F7F
+	background-color: #F2F2F2
+	transition: all .3s
+	padding: 0 30px
+
+	outline: none
+	box-shadow: none
+	-webkit-appearance: none
+	
+	&:hover, &:focus
+		background-color: #fff
+		border: 2px solid #7F7F7F
+
+	&:focus:required:invalid
+		border-color: #808080
+		outline: none
+		box-shadow: none
+		-webkit-appearance: non
+
+	&:required:valid
+		border-color: #808080
+		outline: none
+		box-shadow: none
+		-webkit-appearance: non
+
+	&::placeholder
+		color: #7F7F7F
+		font-size: 16px
+		line-height: 1
+
+b, strong
+	font-weight: 700
+
+p
+	margin: 0
+	padding: 0
+
+a,
+a:focus,
+a:hover
+	outline: none
+	text-decoration: none
+	
+@import "_base/preloader"
+@import "_base/animation"
+@import "_base/btn"
+@import "_base/form"
+@import "_base/modal"
+@import "_base/hamburger"
