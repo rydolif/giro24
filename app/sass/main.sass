@@ -8,6 +8,7 @@
 	background-color: #fff
 	z-index: 100
 	border-bottom: 1px solid #CDCDD8
+
 	&__container
 		display: flex
 		justify-content: space-between
@@ -17,6 +18,8 @@
 		&--logo
 			font-size: 14px
 			line-height: 17px
+			br
+				display: none
 
 		&--nav
 			display: flex
@@ -28,6 +31,9 @@
 
 			li
 				margin-right: 30px
+
+				&:last-child
+					margin-right: 0
 				a
 					color: $text
 					&:hover, &:focus

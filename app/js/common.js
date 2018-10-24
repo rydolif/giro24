@@ -5,18 +5,33 @@ $(function() {
     $('.modal').popup({transition: 'all 0.3s'});
   
   //---------------------------tabs-----------------------
-    $('.tabs__wrap').hide();
-    $('.tabs__wrap:first').show();
-    $('.tabs__list ul a:first').addClass('active');
 
-    $('.tabs__list ul a').click(function(event){
-      event.preventDefault();
-      $('.tabs__list ul a').removeClass('active');
-      $(this).addClass('active');
-      $('.tabs__wrap').hide();
 
-      var selectTab = $(this).attr('href');
-      $(selectTab).fadeIn();
+    $(".score__list_item").each(function(index, el) {
+      $(el).addClass('score__list_item-' + index);
+
+      $('.score__list_item-' + index + ' .tabs__wrap').hide();
+      $('.score__list_item-' + index + ' .tabs__wrap:first').show();
+      $('.score__list_item-' + index + ' .tabs__list ul a:first').addClass('active');
+
+      $('.score__list_item-' + index + ' .tabs__list ul a').click(function(event){
+        event.preventDefault();
+        $('.score__list_item-' + index + ' .tabs__list ul a').removeClass('active');
+        $(this).addClass('active');
+        $('.score__list_item-' + index + ' .tabs__wrap').hide();
+
+        var selectTab = $(this).attr('href');
+        $(selectTab).fadeIn();
+      });
+
+    });
+
+    $(".tabs__wrap").each(function(index, el) {
+      $(el).attr('id', 'nameID' + index);
+    });
+
+    $(".tabs__list a").each(function(index, el) {
+      $(el).attr('href', '#nameID' + index);
     });
 
   //-------------------------скорость якоря---------------------------------------
