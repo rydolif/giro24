@@ -1,12 +1,10 @@
 <?php
-	$SITE_TITLE = 'LeoLoft';
+	$SITE_TITLE = 'giro24.by';
 	$SITE_DESCR = '';
 
 	if ( isset($_POST) ) {
-		$name = htmlspecialchars(trim($_POST['name']));
+		$textarea = htmlspecialchars(trim($_POST['textarea']));
 		$phone = htmlspecialchars(trim($_POST['phone']));
-		$number = htmlspecialchars(trim($_POST['number']));
-		$product = htmlspecialchars(trim($_POST['product']));
 		$subject = $_POST['subject'] ? htmlspecialchars(trim($_POST['subject'])) : '';
 		$comment = isset($_POST['comment']) ? htmlspecialchars(trim($_POST['comment'])) : '';
 		$question = isset($_POST['question']) ? htmlspecialchars(trim($_POST['question'])) : '';
@@ -17,25 +15,10 @@
 		$headers .= "Content-Type: text/html; charset=utf-8\r\n";
 
 		$data = '<h1>'.$subject."</h1>";
-		$data .= 'Имя: '.$name."<br>";
 		$data .= 'Телефон: '.$phone."<br>";
 
-
-		if ( $number != '' ) {
-			$data .= 'Количество: ' . $number ."<br>";
-		}
-
-		if ( $product != '' ) {
-			$data .= 'Название товара: ' . $product ."<br>";
-		}
-
-
-		if ( $comment != '' ) {
-			$data .= 'Комментарий: ' . $comment;
-		}
-
-		if ( $question != '' ) {
-			$data .= 'Вопрос: ' . $question;
+		if ( $textarea != '' ) {
+			$data .= 'Вопрос: ' . $textarea ."<br>";
 		}
 
 		$message = "<div style='background:#ccc;border-radius:10px;padding:20px;'>

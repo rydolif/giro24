@@ -1,5 +1,9 @@
 $(function() {
 
+
+  //-------------------------------попандер---------------------------------------
+    $('.modal').popup({transition: 'all 0.3s'});
+  
   //---------------------------tabs-----------------------
     $('.tabs__wrap').hide();
     $('.tabs__wrap:first').show();
@@ -42,12 +46,12 @@ $(function() {
           name: 'required',
         },
         messages: {
-          name: "Введите Ваше имя",
+          textarea: "Введите вопрос",
           phone: "Введите Ваш телефон",
         },
         submitHandler: function(form) {
           var t = {
-            name: jQuery('.form-' + index).find("input[name=name]").val(),
+            textarea: jQuery('.form-' + index).find("textarea[name=textarea]").val(),
             phone: jQuery('.form-' + index).find("input[name=phone]").val(),
             subject: jQuery('.form-' + index).find("input[name=subject]").val()
           };

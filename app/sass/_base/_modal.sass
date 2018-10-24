@@ -1,42 +1,58 @@
 .modal
 	position: relative
-	overflow: hidden
-	max-width: 320px
+	max-width: 400px
 	height: auto
-	padding: 50px
-	background-color: #fff
+	padding: 28px
+	background-color: #DEE1E2
 	z-index: 1
 
-	label.error
-		position: absolute
-		top: -20px
-		right: 0
-		left: 0
-		transition: all .3s
-		animation: error .3s linear 1 forwards
-		color: red
+	.form
+		display: flex
+		flex-direction: column
 		text-align: center
-		font-weight: 400
+
+	h3
+		font-size: 30px
+		line-height: 1
+		margin-bottom: 10px
+		font-weight: 600
+
+	p
+		font-size: 18px
+		line-height: 23px
+		color: #000
+		margin-bottom: 25px
+
+	span
+		display: block
+		font-size: 11px
+		line-height: 16px
+		color: #7f8c8d
 
 	.btn
-		width: 100%
-		padding: 18px 0
-		font-size: 12px
+		text-transform: uppercase
 
 	.close
 		position: absolute
-		right: 15px
-		top: 15px
+		right: -35px
+		top: -35px
 		display: block
-		background: url(../img/icon/close.svg)
-		background-repeat: no-repeat
-		background-size: cover
-		background-position: center
-		width: 20px
-		height: 20px
-		border: none
+		background: #000
+		width: 32px
+		height: 32px
+		border: 2px solid #fff
+		border-radius: 100%
 		outline: none
 		cursor: pointer
 		animation: hover-back .2s ease-in forwards
+		color: #fff
+
 		&:hover
 			animation: hover .2s ease-in forwards
+
+		&::before
+			content: 'x'
+			position: absolute
+			left: 50%
+			top: 50%
+			transform: translate(-50%, -50%)
