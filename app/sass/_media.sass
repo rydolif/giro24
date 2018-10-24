@@ -82,14 +82,356 @@
 		a
 			font-size: 12px
 
+	.top__line .arrow
+		display: none
+
+	.stock
+
+		&__right
+			width: 100%
+
+		&__bg
+			display: none
+	
+	.score__block
+		flex-direction: column
+		&_tabs
+			width: 100%
+
+		&_content
+			width: 100%
+
+	.choose
+		&__content
+			width: 100%
+			margin-left: 0
+		&__bg
+			display: none
+
+	.installment-plan
+		&__bg
+			display: none
+
+		&__content
+			width: 100%
+			margin-left: 0
+
+	.crafts
+
+		iframe
+			width: 100%
+			height: 400px
+
+	.wholesale
+
+		&__content
+			width: 100%
+			margin-left: 0
+		&__bg
+			display: none
+
+	.testimonials
+		&__list_item
+			height: 250px
+
+		iframe
+			width: 100%
+			height: 400px
+
+	.map__container_info
+		width: 70%
+
+
+	.have-question
+
+		.right-block
+			width: 100%
+
+			.form-block
+				width: 100%
+				margin-left: 0
+
+		.left-block
+			display: none
+
+	.footer-content
+		flex-direction: column
+		align-items: center
+	
+	.footer
+		text-align: center
+		.left-column, .center-content, .right-content
+			width: 100%
+			margin-left: 0
+			margin-bottom: 30px
+
+	.sertificat
+		a
+			height: 190px
+
+	.score h2
+		font-size: 28px
+		line-height: 1.4
+		margin-bottom: 20px
+
+	.have-question .right-block
+		h2
+			font-size: 28px
+			line-height: 1.4
+			margin-bottom: 10px
+
+		h3
+			font-size: 20px
+	
+	.thanks-sect__wrap
+		&-img
+			display: none
+
+		&-content
+			width: 100%
+			margin-left: 0
+
+			a
+				margin-top: 30px
+
+			p
+				font-size: 28px
+				line-height: 1.4
+				br
+					display: none
+
+
+
+
 @media only screen and (max-width : 767px)
-	.header
+	.header__block--nav
+		display: none
+	
+	.top
+		p
+			font-size: 16px
+			line-height: 1.4
+
+		&__list
+			margin-top: 0
+
+			p:nth-child(n+2)
+				width: 100%
+			p:nth-child(n+3)
+				width: 100%
+
+		&__line_container
+			flex-direction: column
+
+			p
+				margin-bottom: 20px
+
+	.stock
+		padding-top: 40px
+	
+	.form
+		flex-direction: column
+
+		div
+			margin: 0 auto 20px
+
+			&:last-child
+				margin-right: auto
+				margin-bottom: 30px
+
+	.score
+		padding-top: 40px
+	
+	.circle__list
+		justify-content: space-between
+
+	.installment-plan__content ul
+		width: 100%
+
+	.advantages
+
+		p
+			font-size: 16px
+			line-height: 1.3
+
+		&__bg
+			display: none
+
+		&__list
+			justify-content: space-between
+
+		&__item
+			&_img
+				width: 80px
+				height: 80px
+
+			img
+				width: 80px
+				height: 80px
+	
+	.crafts
+		iframe
+			height: 300px
+
+	.official__item_img
+		width: 80px
+		height: 80px
+
+	.official
+
+		span
+			font-size: 16px
+			line-height: 1.3
+
+		&__certificates
+			flex-wrap: wrap
+
+			&_item
+				width: 32%
+				margin-bottom: 15px
+
+	.testimonials__list
+		flex-wrap: wrap
+		justify-content: space-around
+
+		&_item
+			width: 32%
+			margin-bottom: 15px
+
+	.service-img
+		display: none
+
+	.service__wrap-content
+		width: 100%
+		margin: 0
+
+	.have-question .right-block .form-block
+		flex-direction: column
+
+	.have-question .right-block .footer__form_line
+		margin: 0 auto 20px
+
+
+	.testimonials
+		iframe
+			height: 300px
 
 @media only screen and (max-width : 576px)
-	.header
+	.score__list_item
+		padding: 20px
+
+	.stock__right p
+		font-size: 16px
+		line-height: 1.4
+		margin-bottom: 15px
+	
+	.score__block_tabs p
+		font-size: 16px
+
+	.map h2
+		padding: 0 15px
 
 @media only screen and (max-width : 480px)
+	h1
+		font-size: 26px
+
+
+	h2
+		font-size: 22px
+
+
 	.header
+		&__logo
+			width: 150px
+
+		&__block--tel
+			display: none
+
+	.header__block--logo
+		width: 100%
+		text-align: center
+
+	.score h2
+		font-size: 22px
+
+	.have-question .right-block
+		h2
+			font-size: 22px
+
+		h3
+			font-size: 18px
+
+	.score h3
+		font-size: 18px
+
+		b, span
+			font-size: 18px
+
+	.score__block_tabs p
+		font-size: 14px
+
+	.circle__list
+		p
+			font-size: 14px
+
+	.score__block_content
+		h4
+			font-size: 18px
+		li
+			font-size: 14px
+			line-height: 1.4
+
+		&_info
+			width: 100%
+
+		&_order
+			width: 100%
+
+	.advantages
+
+		&__list
+			flex-wrap: wrap
+			justify-content: space-around
+
+		&__item
+			width: 47%
+			margin-right: 0
+			margin-bottom: 15px
+
+	.crafts
+		font-size: 16px
+		line-height: 1.4
+		p
+			margin-bottom: 15px
+
+	.official
+		&__list
+			flex-wrap: wrap
+			justify-content: space-around
+
+		&__item
+			width: 47%
+
+	.testimonials__list_item
+		width: 45%
+
+
+	.sertificat a
+		height: 150px
+
+
+	.map__container
+		width: 100%
+
+	.map__container_info
+		width: 90%
+		right: 15px
+		left: 15px
+
+
+
+
+
 
 
 

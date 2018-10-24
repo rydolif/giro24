@@ -5,8 +5,6 @@ $(function() {
     $('.modal').popup({transition: 'all 0.3s'});
   
   //---------------------------tabs-----------------------
-
-
     $(".score__list_item").each(function(index, el) {
       $(el).addClass('score__list_item-' + index);
 
@@ -39,7 +37,7 @@ $(function() {
         event.preventDefault();
         var id  = $(this).attr('href'),
             top = $(id).offset().top;
-        $('body,html').animate({scrollTop: top - 0}, 'slow', 'swing');
+        $('body,html').animate({scrollTop: top - 15}, 'slow', 'swing');
     });
 
   //------------------------------------form-------------------------------------------
