@@ -1,6 +1,5 @@
 $(function() {
 
-
   //-------------------------------попандер---------------------------------------
     $('.modal').popup({transition: 'all 0.3s'});
   
@@ -81,7 +80,8 @@ $(function() {
         data: data,
         success: function() {
           $(".modal").popup("hide");
-          $("#thanks").popup("show");
+          var url = "thanks.html";
+          $(location).attr('href',url);
           setTimeout(function() {
             $(formName).trigger('reset');
           }, 2000);
@@ -94,7 +94,7 @@ $(function() {
 
 //----------------------------------------preloader----------------------------------
 
-  $(window).on('load', function(){
-    $('.preloader').delay(1000).fadeOut('slow');
-  });
+  // $(window).on('load', function(){
+  //   $('.preloader').delay(1000).fadeOut('slow');
+  // });
 

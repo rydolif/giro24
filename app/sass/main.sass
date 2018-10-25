@@ -254,11 +254,19 @@ h2
 		flex-direction: column
 
 		&_item
+			position: relative
 			width: 100%
 			background: #fff
 			padding: 34px 15px 10px 37px
 			border: 1px solid #000
 			margin-bottom: 40px
+
+			&--img
+				position: absolute
+				left: -13px
+				top: 18px
+				z-index: 1
+
 
 	&__block
 		display: flex
@@ -330,6 +338,7 @@ h2
 					b
 						font-size: 25px
 						line-height: 30px
+						text-decoration: line-through
 
 				p
 					display: flex
@@ -344,6 +353,7 @@ h2
 						line-height: 40px
 						line-height: 1
 
+
 					a
 						display: block
 						text-align: center
@@ -355,10 +365,29 @@ h2
 				.btn
 					margin-bottom: 15px
 
+.score__list_item-5
+	.tabs__wrap img
+		width: auto
+
+	.tabs__list img
+		width: auto
+
+.score__list_item-6
+	.tabs__wrap
+		display: flex
+		flex-direction: column
+		justify-content: space-between
+		align-items: center
+		img
+			height: auto
+
+.score__list_item-8
+	.tabs__list img
+		width: auto
+
 .tabs
 	display: flex
 
-	
 	&__wrap
 		position: relative
 		text-align: center
@@ -377,6 +406,11 @@ h2
 			font-size: 16px
 			line-height: 19px
 			font-style: normal
+
+			span
+				font-size: 14px
+				line-height: 16px
+				color: #000
 
 	&__list
 
